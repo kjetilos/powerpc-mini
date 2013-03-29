@@ -13,7 +13,7 @@ then
 fi
 
 cd crosstool-ng-1.18.0
-echo Configure crosstool to path $CWD/tools/crosstool-ng
 ./configure --prefix=$CWD/tools/crosstool-ng
+make -j 8 && make install
 
 
